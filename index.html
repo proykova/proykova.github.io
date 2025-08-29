@@ -22,7 +22,7 @@
 
             <a href="dessi-and-bilyana.html">
                 <article id="dessi-and-bilyana" class="movie">
-                    <span class="title">
+                    <span  id="dessi-and-bilyana-title" class="title">
                         Dessi and Bilyana
                     </span>
                 </article>
@@ -30,9 +30,9 @@
 
 
             <article id="maids-doll" class="movie">
-                <a href="dessi-and-bilyana.html">
+                <a href="maids-doll.html">
 
-                    <span class="title">
+                    <span id="maids-doll-title" class="title">
                         Maid's doll
                     </span>
                 </a>
@@ -59,7 +59,15 @@
 
         </section>
     </div>
-
+<script>
+    const hasMouse = matchMedia('(pointer: fine)').matches;
+    if (!hasMouse) {
+        document.getElementById('dessi-and-bilyana-title').style.opacity = 1;
+        document.getElementById('maids-doll-title').style.opacity = 1;
+        
+    }
+  </script>
 </body>
+
 
 </html>
