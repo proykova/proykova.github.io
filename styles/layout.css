@@ -1,0 +1,80 @@
+html {
+    background-color: var(--color-main-background);
+    color: var(--font-color);
+}
+
+
+.custom-width {
+    padding: 0em 3em;
+}
+
+.movie {
+    width: 100vw;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#movies a {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-main-background);
+    text-transform: uppercase;
+    transition: color 0.7s ease-in-out;
+}
+
+#movies a span {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+#dessi-and-bilyana:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#maids-doll:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#dessi-and-bilyana {
+    background-image: url("../images/dessi-and-biliana.png");
+
+}
+
+#maids-doll {
+    background-image: url("../images/kuklata.png");
+}
+
+
+li:not(:last-of-type) {
+    padding-bottom: 1em;
+
+}
+
+/*a span:nth-child(1){
+    display: block;
+    opacity: 50%;
+    
+}*/
+
+.social ul {
+    display: flex;
+    gap: 1em;
+
+
+}
+
+.social ul li {
+    width: 4em;
+    height: auto;
+}
