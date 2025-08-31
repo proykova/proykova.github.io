@@ -1,0 +1,8 @@
+html {
+    background-color: var(--color-main-background);
+    color: var(--font-color);
+}
+
+.custom-width {
+    padding: 0em 3em;
+}

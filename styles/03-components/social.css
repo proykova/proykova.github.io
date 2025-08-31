@@ -1,0 +1,9 @@
+.social ul {
+    display: flex;
+    gap: 1em;
+}
+
+.social ul li {
+    width: 4em;
+    height: auto;
+}

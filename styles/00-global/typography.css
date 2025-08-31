@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+html {
+    font: var(--font-base-size)/var(--font-line-height) var(--body-font-family), sans-serif;
+}
+
+body,
+table,
+th,
+td,
+form,
+input,
+textarea,
+option,
+button {
+    font: inherit;
+    color: var(--font-color, #333);
+}
+
+p,
+*+ul,
+*+ol {
+    padding-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.0em;
+    font-family: var(--headings-font-hamily);
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.0em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+li{
+    list-style: none;
+}
+

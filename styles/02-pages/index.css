@@ -1,0 +1,96 @@
+.movie {
+    width: 100vw;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#movies a {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-main-background);
+    text-transform: uppercase;
+    transition: color 0.7s ease-in-out;
+}
+
+#movies a span {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+#dessi-and-bilyana:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#dessi-and-bilyana {
+    background-image: url("../../images/dessi-and-biliana.png");
+}
+
+#mama-why:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#mama-why {
+    background-image: url("../../images/mama-why.jpg");
+}
+
+#adam-susbe:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#adam-susbe {
+    background-image: url("../../images/adam-susbe.png");
+}
+
+
+#no-perfect:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#no-perfect {
+    background-image: url("../../images/no-perfect.png");
+}
+
+#erika:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#erika {
+    background-image: url("../../images/erika.png");
+}
+
+#maids-doll:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#maids-doll {
+    background-image: url("../../images/kuklata.png");
+}
+
+#viewpoint:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#viewpoint {
+    background-image: url("../../images/viewpoint.png");
+}
