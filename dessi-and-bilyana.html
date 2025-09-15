@@ -15,9 +15,54 @@
     <article class="site-wrapper">
         <header class="custom-width">
             <h1>Dessi and Bilyana</h1>
-            <p>Film by Dima Proykova</p>
+            <p>Director. Writer. Editor.</p>
         </header>
 
+        <section class="video">
+            <div class="video-wrapper"
+                onclick="openModal('https://www.youtube.com/embed/BH7Hvs6bAfo?si=KPv21iLFReQHNGGo')">
+                <img src="images/dessi-and-biliana.png" alt="Watch trailer" class="video-thumb">
+                <div class="play-button"></div>
+            </div>
+
+            <!-- Модал -->
+            <div id="videoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <iframe id="videoFrame" src="https://www.youtube.com/embed/BH7Hvs6bAfo?si=KPv21iLFReQHNGGo"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="info custom-width">
+            <div class="awards">
+                Some Awards Here
+            </div>
+            <div class="official-selections">
+                Some Selections Here
+            </div>
+        </section>
+        <footer class="laurels">
+            <span class="laurel">
+                <img src="images/desi-bilyana-semi-finalist-f.png" alt="">
+            </span>
+            <span class="laurel">
+                <img src="images/desi-bilyana-folkestone-film-festival-honorable-mention-2025.png" alt="">
+            </span>
+            <span class="laurel">
+                <img src="images/desi-bilyana-misff-2024-selected-laurel.png" alt="">
+            </span>
+            <span class="laurel">
+                <img src="images/desi-bilyana-ls.png" alt="">
+            </span>
+            <span class="laurel">
+                <img src="images/desi-bilyana-official-selection-new-york-istanbul-short-film-festival-2025.png" alt="">
+            </span>
+
+        </footer>
+    </article>
+
+    <script src="script.js"></script>
 
 </body>
 
