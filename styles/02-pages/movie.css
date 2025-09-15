@@ -88,9 +88,11 @@
     gap: 1em;
     align-items: center;
     justify-content: space-around;
+    margin-top: 2em;
 }
 
 .laurel {
     flex: 0 0 7em;
 
 }
+
