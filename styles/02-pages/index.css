@@ -1,5 +1,17 @@
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#movies a {
+    display: inline-block;
+    flex: 1 0 45%;
+    min-width: 600px;
+}
+
 .movie {
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,10 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1em;
 }
 
-#movies a {
+
+#movies a span {
     font-size: 3em;
     font-weight: bold;
     text-decoration: none;
@@ -18,11 +30,9 @@
     text-transform: uppercase;
     transition: color 0.7s ease-in-out;
     text-shadow: var(--text-shadow);
-}
-
-#movies a span {
     padding: 0 2em;
     text-align: center;
+    padding: 0, 2em;
 }
 
 @media (pointer: fine) {
@@ -40,7 +50,13 @@
 
 #dessi-and-bilyana {
     background-image: url("../../images/dessi-and-biliana.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
 
+#dessi-and-bilyana:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #mama-why:hover span {
@@ -51,8 +67,14 @@
 
 #mama-why {
     background-image: url("../../images/mama-why.jpg");
-
     background-position: right;
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#mama-why:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #adam-susbe:hover span {
@@ -63,17 +85,32 @@
 
 #adam-susbe {
     background-image: url("../../images/adam-susbe.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#adam-susbe:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #no-perfect:hover span {
     opacity: 1;
     color: var(--font-color);
     text-shadow: var(--text-shadow);
+    z-index: 100;
 }
 
 #no-perfect {
     background-image: url("../../images/no-perfect.png");
     background-position: right;
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#no-perfect:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #erika:hover span {
@@ -84,6 +121,13 @@
 
 #erika {
     background-image: url("../../images/erika.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#erika:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #maids-doll:hover span {
@@ -94,6 +138,13 @@
 
 #maids-doll {
     background-image: url("../../images/kuklata.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#maids-doll:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
 
 #viewpoint:hover span {
@@ -104,4 +155,31 @@
 
 #viewpoint {
     background-image: url("../../images/viewpoint.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#viewpoint:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+.posters ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3em;
+}
+
+.posters ul li {
+    flex: 1 0 5em;
+    transition: filter 0.7s ease;
+    min-width: 5em;
+    min-height: 7em;
+}
+
+.posters ul li:hover {
+    filter: brightness(40%);
 }
