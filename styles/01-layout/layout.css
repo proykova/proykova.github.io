@@ -1,8 +1,9 @@
 html {
     background-color: var(--color-main-background);
     color: var(--font-color);
+    padding-bottom: 2em;
 }
 
 .custom-width {
-    padding: 0em 3em;
+    padding: 0em 2em;
 }
