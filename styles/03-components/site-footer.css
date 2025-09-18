@@ -6,7 +6,6 @@
 .footer-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 3em;
     align-items: center;
     justify-content: space-between;
 }
