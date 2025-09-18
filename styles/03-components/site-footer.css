@@ -1,0 +1,21 @@
+.site-footer {
+    padding-top: 2em;
+    margin-top: 2em;
+}
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-item p {
+    font-family: var(--headings-font-hamily);
+    padding-bottom: 0.7em;
+}
+
+.footer-item ul {
+    padding-bottom: 0.5em;
+}

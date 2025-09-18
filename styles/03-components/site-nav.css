@@ -1,0 +1,20 @@
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.navigation {
+    display: none;
+}*/
+
+.site-nav nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.site-nav nav ul li a {
+    font-family: var(--headings-font-hamily);
+    text-transform: uppercase;
+}

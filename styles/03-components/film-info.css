@@ -1,0 +1,37 @@
+.dima-roles {
+    color: var(--color-second);
+}
+
+.info .awards {
+    font-family: var(--headings-font-hamily);
+    font-size: 2em;
+}
+
+.info .about {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info .team {
+    font-family: var(--headings-font-hamily);
+    font-size: 1em;
+    padding-bottom: 0.5em;
+}
+
+.info .team li {
+    display: flex;
+    gap: 1em;
+}
+
+.info .team .name {
+    font-family: var(--body-font-family);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.info .team .role {
+    font-family: var(--headings-font-hamily);
+    color: rgba(var(--font-color-rgb), 0.5);
+}
