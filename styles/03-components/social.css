@@ -1,9 +1,12 @@
-.social ul {
+.folow ul {
     display: flex;
     gap: 1em;
+    padding-bottom: 0;
 }
 
-.social ul li {
-    width: 4em;
+.social li {
+    width: 2em;
     height: auto;
+    align-self: center;
+    align-self: flex-end;
 }
