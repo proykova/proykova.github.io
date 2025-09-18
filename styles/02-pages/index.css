@@ -49,7 +49,7 @@
 }
 
 #dessi-and-bilyana {
-    background-image: url("../../images/dessi-and-biliana.png");
+    background-image: url("/images/Dessi-and-Biliana/dessi-and-biliana.png");
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
     transition: background-color 0.7s ease;
@@ -66,7 +66,7 @@
 }
 
 #mama-why {
-    background-image: url("../../images/mama-why.jpg");
+    background-image: url("/images/Mama-why-are-they-killing-us/mama-why.jpg");
     background-position: right;
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
@@ -84,7 +84,7 @@
 }
 
 #adam-susbe {
-    background-image: url("../../images/adam-susbe.png");
+    background-image: url("/images/Adam-Susbes-Last-Interview/adam-susbe.png");
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
     transition: background-color 0.7s ease;
@@ -102,7 +102,7 @@
 }
 
 #no-perfect {
-    background-image: url("../../images/no-perfect.png");
+    background-image: url("/images/No-Perfect-Memories/no-perfect.png");
     background-position: right;
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
@@ -120,7 +120,7 @@
 }
 
 #erika {
-    background-image: url("../../images/erika.png");
+    background-image: url("/images/Erikas-Jewel/erika.png");
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
     transition: background-color 0.7s ease;
@@ -137,7 +137,7 @@
 }
 
 #maids-doll {
-    background-image: url("../../images/kuklata.png");
+    background-image: url("/images/Maids-Doll/kuklata.jpg");
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
     transition: background-color 0.7s ease;
@@ -154,7 +154,7 @@
 }
 
 #viewpoint {
-    background-image: url("../../images/viewpoint.png");
+    background-image: url("/images/Viewpoint/viewpoint.png");
     background-color: rgba(var(--color-main-background-rgb), 0);
     background-blend-mode: multiply;
     transition: background-color 0.7s ease;
