@@ -1,0 +1,13 @@
+.movie-details .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2em;
+}
+
+.movie-details .fotos .pic {
+    flex: 1 0 45%;
+    min-width: 150px;
+}
