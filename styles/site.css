@@ -5,8 +5,12 @@
 @import url(01-layout/layout.css);
 @import url(02-pages/index.css);
 @import url(02-pages/movie.css);
-@import url(03-components/social.css);
 @import url(03-components/film-info.css);
 @import url(03-components/site-footer.css);
 @import url(03-components/bottom-bar.css);
 @import url(03-components/site-nav.css);
+@import url(03-components/site-header.css);
+@import url(03-components/movie-pics.css);
+@import url(03-components/movie-video.css);
+@import url(03-components/movie-details.css);
+@import url(03-components/laurels.css);
