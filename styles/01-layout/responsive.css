@@ -2,28 +2,27 @@
     :root {
         --font-base-size: 14px;
     }
-
+    .custom-width {
+        padding: 0em 1em;
+    }
 }
-
 @media only screen and (width > 480px) {
     :root {
         --font-base-size: 14px;
     }
-
+    .custom-width {
+        padding: 0em 2em;
+    }
 }
-
 @media only screen and (width > 768px) {
     :root {
         --font-base-size: 16px;
     }
-
 }
-
 @media only screen and (width > 1024px) {
     :root {
         --font-base-size: 18px;
     }
-
 }
 
 @media only screen and (width > 1280px) {
