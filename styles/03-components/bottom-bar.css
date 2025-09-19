@@ -4,7 +4,7 @@
     font-family: var(--headings-font-hamily);
     border-top: 1px solid rgba(var(--font-color-rgb), 0.5);
     padding-top: 1em;
-    color: rgba(var(--font-color-rgb), 0.5);
+    color: rgba(var(--font-color-rgb), 0.4);
     font-weight: normal;
     text-align: right;
     font-size: 1em;
@@ -14,3 +14,4 @@
     text-transform: uppercase;
     color: var(--color-second);
 }
+
