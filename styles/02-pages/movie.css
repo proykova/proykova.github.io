@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    gap: 2em;
+    gap: 1em;
 }
 
 .movie-item {
