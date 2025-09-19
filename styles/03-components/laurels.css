@@ -1,11 +1,10 @@
 .laurels {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 3em;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .laurel {
