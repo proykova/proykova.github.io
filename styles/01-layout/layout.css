@@ -3,7 +3,3 @@ html {
     color: var(--font-color);
     padding-bottom: 2em;
 }
-
-.custom-width {
-    padding: 0em 2em;
-}
