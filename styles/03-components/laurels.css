@@ -1,7 +1,7 @@
 .laurels {
     display: flex;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     margin-top: 3em;
@@ -10,3 +10,4 @@
 .laurel {
     flex: 0 0 7em;
 }
+
