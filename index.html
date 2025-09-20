@@ -13,15 +13,27 @@
 <body>
     <div class="site-wrapper">
         <header class="site-header custom-width">
-            <div class="site-nav">
-                <h1><a href="https://dimaproykova.eu/">Dima Proykova</a></h1>
-                <!--<nav class="navigation">
-                    <ul>
-                        <li><a href="films.html">Films</a></li>
-                        <li><a href="about.html">About me</a></li>
-                        <li><a href="contact.html">Contact me</a></li>
-                    </ul>
-                </nav>-->
+            <div class="navigation">
+                <div class="navigation">
+                    <div class="container">
+                        <div class="site-logo">
+                            <h1><a href="https://dimaproykova.eu/">Dima Proykova</a></h1>
+                        </div>
+                        <div id="menu-toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <nav id="mobile-menu" class="site-nav">
+                        <ul>
+                            <li><a href="index.html" class="menu-link">Films</a></li>
+                            <li><a href="about.html" class="menu-link">About me</a></li>
+                            <li><a href="contact.html" class="menu-link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
             </div>
             <p class="dima-roles">Director. Writer. Editor. Photographer. Actress. Ecologist. Feminist</p>
         </header>
@@ -106,7 +118,7 @@
                 </section>
 
                 <section class="contact footer-item">
-                    <p>proykovadima@gmail.com</p>
+                    <p><span id="email-footer"></span></p>
                 </section>
             </div>
             <section class="bottom-bar">
@@ -116,18 +128,10 @@
         </footer>
     </div>
 
-    <script>
-        const hasMouse = matchMedia('(pointer: fine)').matches;
-        if (!hasMouse) {
-            document.getElementById('dessi-and-bilyana-title').style.opacity = 1;
-            document.getElementById('maids-doll-title').style.opacity = 1;
+    <button id="backToTopModern" title="Back To Top">⬆</button>
 
-        }
-    </script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
-
-
-
-
