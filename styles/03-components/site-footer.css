@@ -1,3 +1,18 @@
+#email-footer,
+#email-content {
+    font-family: "Roboto Mono", monospace;
+}
+
+#email-content {
+    padding-left: 0.5em;
+}
+
+#email-content a {
+    color: var(--color-second);
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
 .site-footer {
     padding-top: 2em;
     margin-top: 4em;
