@@ -16,21 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 });
 
-
-const btnModern = document.getElementById("backToTopModern");
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        btnModern.classList.add("show");
+window.onscroll = function () {
+    let btn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
     } else {
-        btnModern.classList.remove("show");
+        btn.style.display = "none";
     }
-});
-btnModern.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
+};
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 const user = "proykovadima";
 const domain = "gmail.com";
+
+// Сглобяване на имейла
 const email = user + "@" + domain;
+
+// Показване в страницата
 document.getElementById("email-footer").innerHTML = `<a href="mailto:${email}">${email}</a>`;
 document.getElementById("email-content").innerHTML = `<a href="mailto:${email}">${email}</a>`;
