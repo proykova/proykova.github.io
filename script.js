@@ -1,16 +1,36 @@
-function openModal(videoUrl) {
-    document.getElementById("videoFrame").src = videoUrl;
-    document.getElementById("videoModal").style.display = "flex";
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuLinks = document.querySelectorAll(".menu-link");
 
-function closeModal() {
-    document.getElementById("videoFrame").src = "";
-    document.getElementById("videoModal").style.display = "none";
-}
+    menuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("active");
+        menuToggle.classList.toggle("open");
+    });
 
-window.onclick = function (event) {
-    let modal = document.getElementById("videoModal");
-    if (event.target === modal) {
-        closeModal();
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            mobileMenu.classList.remove("active");
+            menuToggle.classList.remove("open");
+        })
+    })
+});
+
+
+const btnModern = document.getElementById("backToTopModern");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btnModern.classList.add("show");
+    } else {
+        btnModern.classList.remove("show");
     }
-}
+});
+btnModern.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const user = "proykovadima";
+const domain = "gmail.com";
+const email = user + "@" + domain;
+document.getElementById("email-footer").innerHTML = `<a href="mailto:${email}">${email}</a>`;
+document.getElementById("email-content").innerHTML = `<a href="mailto:${email}">${email}</a>`;
