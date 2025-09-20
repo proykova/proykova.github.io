@@ -164,24 +164,3 @@
 #viewpoint:hover {
     background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
-
-.posters ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 3em;
-}
-
-.posters ul li {
-    flex: 1 0 5em;
-    transition: filter 0.7s ease;
-    min-width: 5em;
-    min-height: 7em;
-}
-
-.posters ul li:hover {
-    filter: brightness(40%);
-}
-
