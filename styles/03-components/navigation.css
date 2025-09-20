@@ -1,0 +1,112 @@
+#mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin-top: 5em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+#mobile-menu ul {
+    background-color: var(--color-main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.1em;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.site-logo {
+    width: 80%;
+}
+
+#menu-toggle {
+    width: 20%;
+}
+
+#menu-toggle {
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.1em;
+    outline: none;
+    padding: 0 0;
+    outline: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.1em;
+    z-index: 1001;
+    position: relative;
+    transform: translateZ(0);
+}
+
+#menu-toggle .bar {
+    height: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    display: block;
+    background-color: var(--font-color);
+    border-radius: 0.1em;
+    transition: all 0.2s ease;
+    z-index: 1005;
+}
+
+#menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 0.4em;
+}
+
+#menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -0.4em;
+}
+
+.site-header nav {
+    width: 100%;
+    background: rgb(var(--color-main-background));
+    opacity: 80%;
+    padding: 1em 2em;
+}
+
+.site-header nav li {
+    list-style-type: none;
+}
+
+.site-header .site-nav {
+    margin-top: 0.7em;
+    width: 100%;
+}
+
+.site-header nav li a {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    color: var(--color-main-second);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.0625em;
+}
