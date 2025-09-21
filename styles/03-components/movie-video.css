@@ -4,6 +4,7 @@
     padding-top: 56.25%;
     /* 16:9 съотношение (315/560 = 0.5625) */
     overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .video-wrapper iframe {
