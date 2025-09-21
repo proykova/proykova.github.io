@@ -10,6 +10,15 @@
     padding-top: 1.5em;
 }
 
+
+.movie-ifno-content p {
+    padding-bottom: 0;
+}
+
+.movie-ifno-content ul {
+    padding-bottom: 0;
+}
+
 .movie-ifno-content ul li .role {
     font-family: var(--headings-font-hamily);
     color: rgba(var(--font-color-rgb), 0.5);
