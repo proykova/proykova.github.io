@@ -6,7 +6,28 @@
     gap: 1em;
 }
 
+.movie-visuals {
+    flex: 1 0 60%;
+}
+
+.movie-info {
+    flex: 1 0 30%;
+}
+
 .movie-item {
-    flex: 1 0 45%;
+
     min-width: 300px;
+}
+
+.site-logo h1 {
+    margin-top: 0.5em;
+}
+
+.movie-details .movie-title {
+    margin-top: 0.5em;
+    flex: 1 0 90%;
+}
+
+.movie-title h2 {
+    margin-top: 0;
 }
