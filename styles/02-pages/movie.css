@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
+    gap: 1em;
 }
 
 .movie-visuals {
@@ -30,4 +31,5 @@
 .movie-title h2 {
     margin-top: 0;
 }
+
 
