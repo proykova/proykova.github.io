@@ -23,13 +23,13 @@
     font-family: var(--headings-font-hamily);
     color: rgba(var(--font-color-rgb), 0.5);
     font-weight: 300;
+    padding-right: 1em;
 }
 
 .movie-ifno-content ul li .name {
     font-family: var(--body-font-family);
     text-transform: uppercase;
     font-weight: normal;
-    padding-left: 1em;
 }
 
 .site-footer .folow {
@@ -39,3 +39,4 @@
     align-self: center;
 
 }
+
