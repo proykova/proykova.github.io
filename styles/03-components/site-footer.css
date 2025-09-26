@@ -3,10 +3,6 @@
     font-family: var(--body-font-family);
 }
 
-.footer-item p{
-    padding-bottom: 0;
-}
-
 #email-content{
     padding-left: 0.5em;
 }
@@ -31,12 +27,12 @@
 
 .footer-item p {
     font-family: var(--headings-font-hamily);
-    padding-bottom: 0.7em;
 }
 
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
 
 
