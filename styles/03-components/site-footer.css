@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom:0.5em;
 }
 
 .footer-item p {
@@ -33,6 +34,7 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
 
 
