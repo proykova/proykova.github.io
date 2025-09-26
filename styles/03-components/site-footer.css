@@ -1,6 +1,6 @@
 #email-footer,
 #email-content {
-    font-family: "Roboto Mono", monospace;
+    font-family: var(--body-font-family);
 }
 
 #email-content {
@@ -33,3 +33,4 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
