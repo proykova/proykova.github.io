@@ -27,11 +27,13 @@
 
 .footer-item p {
     font-family: var(--headings-font-hamily);
+    padding-bottom: 0;
 }
 
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
 
 
