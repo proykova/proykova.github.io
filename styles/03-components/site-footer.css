@@ -3,11 +3,11 @@
     font-family: var(--body-font-family);
 }
 
-#email-footer{
+.footer-item p{
     padding-bottom: 0;
 }
 
-#email-content span{
+#email-content{
     padding-left: 0.5em;
 }
 
@@ -37,6 +37,7 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
 
 
