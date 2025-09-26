@@ -7,7 +7,7 @@
     padding-bottom: 0;
 }
 
-#email-content {
+#email-content span{
     padding-left: 0.5em;
 }
 
@@ -37,5 +37,6 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
 
