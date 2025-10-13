@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="styles/site.css">
     <title>Dima Proykova</title>
 </head>
+
 <body>
-    <div class="site-wrapper">
+
+    <div class="site-wrapper home-page">
         <header class="site-header custom-width">
             <div class="navigation">
                 <div class="navigation">
@@ -25,66 +28,34 @@
                     </div>
                     <nav id="mobile-menu" class="site-nav">
                         <ul>
-                            <li><a href="https://dimaproykova.eu/" class="menu-link">My films</a></li>
-                            <li><a href="about.html" class="menu-link">About me</a></li>
-                            <li><a href="contact.html" class="menu-link">Contact me</a></li>
+                            <li><a href="https://dimaproykova.eu/" class="menu-link">Home</a></li>
+                            <li><a href="/films/" class="menu-link">My films</a></li>
+                            <li><a href="/about/" class="menu-link">About me</a></li>
+                            <li><a href="/contact/" class="menu-link">Contact me</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <p class="dima-roles">Director. Writer. Editor. Photographer. Actress. Ecologist. Feminist</p>
         </header>
-        <section id="movies" class="custom-width">
-            <a href="dessi-and-bilyana.html">
-                <article id="dessi-and-bilyana" class="movie">
-                    <span class="title">
-                        Dessi and Bilyana
-                    </span>
-                </article>
-            </a>
-            <a href="mama-why.html">
-                <article id="mama-why" class="movie">
-                    <span class="title">
-                        Mama, why are they killing us?
-                    </span>
-                </article>
-            </a>
-            <a href="adam-susbe.html">
-                <article id="adam-susbe" class="movie">
-                    <span class="title">
-                        Adam Susbe's last interview
-                    </span>
-                </article>
-            </a>
-            <a href="no-perfect.html">
-                <article id="no-perfect" class="movie">
-                    <span class="title">
-                        No Perfect Memories
-                    </span>
-                </article>
-            </a>
-            <a href="maids-doll.html">
-                <article id="maids-doll" class="movie">
-                    <span class="title">
-                        Maid's doll
-                    </span>
-                </article>
-            </a>
-            <a href="erika.html">
-                <article id="erika" class="movie">
-                    <span class="title">
-                        Erika's Jewel
-                    </span>
-                </article>
-            </a>
-            <a href="viewpoint.html">
-                <article id="viewpoint" class="movie">
-                    <span class="title">
-                        Viewpoint
-                    </span>
-                </article>
-            </a>
+        <section class="hero custom-width">
+            <div class="video-section">
+                <video autoplay muted loop playsinline class="background-video">
+                    <source src="/video/gorski-zalez-3.mp4" type="video/mp4">
+                    Твоят браузър не поддържа видео.
+                </video>
+                <div class="content">
+                    <p class="hero-message">
+                        Cross the boundaries of reality
+                    </p>
+                    <div class="btns">
+                        <span class="btn-cta accent-main"><a href="/films/">See my films</a></span>
+                        <span class="btn-cta accent-second"><a href="/about/">About me</a></span>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <footer class="site-footer custom-width">
             <div class="footer-items">
 
@@ -121,6 +92,5 @@
     </button>
     <script src="script.js"></script>
 </body>
+
 </html>
-
-
