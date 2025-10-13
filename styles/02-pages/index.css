@@ -22,7 +22,6 @@
     align-items: center;
 }
 
-
 #movies a span {
     font-size: 3em;
     font-weight: bold;
@@ -38,7 +37,7 @@
 
 @media (pointer: fine) {
     #movies a span {
-        opacity: 0;
+        opacity: 1;
         transition: opacity 0.7s ease-in-out;
     }
 }
@@ -164,6 +163,3 @@
 #viewpoint:hover {
     background-color: rgba(var(--color-main-background-rgb), 0.7);
 }
-
-
-
