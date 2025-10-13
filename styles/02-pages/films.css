@@ -1,0 +1,165 @@
+#movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+#movies a {
+    display: inline-block;
+    flex: 1 0 45%;
+    min-width: 300px;
+}
+
+.movie {
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movies a span {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    transition: color 0.7s ease-in-out;
+    text-shadow: var(--text-shadow);
+    padding: 0 2em;
+    text-align: center;
+    padding: 0, 2em;
+}
+
+@media (pointer: fine) {
+    #movies a span {
+        opacity: 1;
+        transition: opacity 0.7s ease-in-out;
+    }
+}
+
+#dessi-and-bilyana:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#dessi-and-bilyana {
+    background-image: url("/images/Dessi-and-Biliana/dessi-and-biliana.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#dessi-and-bilyana:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#mama-why:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#mama-why {
+    background-image: url("/images/Mama-why-are-they-killing-us/mama-why.jpg");
+    background-position: right;
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#mama-why:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#adam-susbe:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#adam-susbe {
+    background-image: url("/images/Adam-Susbes-Last-Interview/adam-susbe.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#adam-susbe:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#no-perfect:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+    z-index: 100;
+}
+
+#no-perfect {
+    background-image: url("/images/No-Perfect-Memories/no-perfect.png");
+    background-position: right;
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#no-perfect:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#erika:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#erika {
+    background-image: url("/images/Erikas-Jewel/erika.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#erika:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#maids-doll:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#maids-doll {
+    background-image: url("/images/Maids-Doll/kuklata.jpg");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#maids-doll:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
+
+#viewpoint:hover span {
+    opacity: 1;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+#viewpoint {
+    background-image: url("/images/Viewpoint/viewpoint.png");
+    background-color: rgba(var(--color-main-background-rgb), 0);
+    background-blend-mode: multiply;
+    transition: background-color 0.7s ease;
+}
+
+#viewpoint:hover {
+    background-color: rgba(var(--color-main-background-rgb), 0.7);
+}
