@@ -3,8 +3,9 @@
 @import url(00-global/variables.css);
 @import url(01-layout/responsive.css);
 @import url(01-layout/layout.css);
-@import url(02-pages/index.css);
 @import url(02-pages/movie.css);
+@import url(02-pages/home-page.css);
+@import url(02-pages/films.css);
 @import url(03-components/film-info.css);
 @import url(03-components/site-footer.css);
 @import url(03-components/bottom-bar.css);
@@ -16,3 +17,5 @@
 @import url(03-components/laurels.css);
 @import url(03-components/button-up.css);
 @import url(03-components/navigation.css);
+@import url(03-components/btn.css);
+@import url(03-components/cta.css);
