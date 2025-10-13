@@ -112,7 +112,5 @@
     color: var(--color-main-second);
     text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 0.0625em;
+    letter-spacing: 0.2em;
 }
-
-
