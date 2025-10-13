@@ -1,0 +1,44 @@
+.btn-cta {
+    padding: 0.2em 1.5em 0.35em;
+    border-radius: 0.1em;
+}
+
+.btn-cta a {
+    font-family: var(--body-font-family);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
+}
+
+.btn-cta:hover {
+    cursor: pointer;
+}
+
+.btns .accent-main {
+    background-color: var(--color-main);
+}
+
+.btns .accent-main a {
+    color: var(--font-color);
+}
+
+.btns .accent-main:hover {
+    background-color: var(--color-second);
+}
+
+.btns .accent-main:hover a {
+    color: var(--font-color);
+}
+
+.btns .accent-second a {
+    color: var(--font-color);
+}
+
+.btns .accent-second:hover {
+    background-color: var(--color-second);
+}
+
+.btns .accent-second:hover a {
+    color: var(--font-color);
+}
