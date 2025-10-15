@@ -28,6 +28,10 @@
     padding: 1em 0;
 }
 
+#mobile-menu ul li:hover a {
+    color: var(--color-second);
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -114,3 +118,4 @@
     font-weight: bold;
     letter-spacing: 0.2em;
 }
+
