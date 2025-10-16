@@ -1,5 +1,7 @@
 .dima-roles {
-    background: linear-gradient(90deg, var(--color-main), var(--color-second));
+    /*background: linear-gradient(90deg, var(--color-main), var(--color-second));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    color:var(--color-second);
 }
+
