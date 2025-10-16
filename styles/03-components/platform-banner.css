@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 .baner-logo {
     max-width: 7em;
     padding-top: 0.2em;
+
 }
