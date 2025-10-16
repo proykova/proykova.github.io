@@ -1,8 +1,5 @@
 .dima-roles {
     background: linear-gradient(90deg, var(--color-main), var(--color-second));
-    /* градиент от червено, зелено и синьо */
     -webkit-background-clip: text;
-    /* важи за текст */
     -webkit-text-fill-color: transparent;
-    /* прави текста прозрачен, за да се вижда градиента */
 }
