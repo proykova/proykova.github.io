@@ -11,7 +11,7 @@
     background: linear-gradient(135deg, var(--color-main), var(--color-second));
     /*color: var(--font-color);*/
     padding: 0.6em 0.6em 0.2em 0.6em;
-    border-radius: 0.1em;
+    border-radius: 5em;
 }
 
 #scrollTopBtn:hover {
@@ -29,6 +29,7 @@ svg {
     width: 1.6em;
     height: 1.6em;
 }
+
 
 
 
