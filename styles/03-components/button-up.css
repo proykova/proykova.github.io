@@ -21,16 +21,16 @@
 svg {
     width: 1.5em;
     height: 1.5em;
-    opacity: 80%;
+    fill: var(--font-color);
     transition: all 0.7s ease-in-out;
+    text-shadow: var(--text-shadow);
 }
 
 #scrollTopBtn:hover svg{
     width: 1.6em;
     height: 1.6em;
-    fill: var(--font-color);
-    text-shadow: var(--text-shadow);
 }
+
 
 
 
