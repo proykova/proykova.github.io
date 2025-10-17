@@ -12,7 +12,7 @@
     /*color: var(--font-color);*/
     padding: 0.6em 0.6em 0.2em 0.6em;
     border-radius: 0.1em;
-    transition: background-color 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 #scrollTopBtn:hover {
@@ -22,8 +22,12 @@
 svg {
     width: 1.5em;
     height: 1.5em;
-    fill: var(--font-color);
     opacity: 80%;
+}
+
+#scrollTopBtn:hover svg{
+    width: 1.6em;
+    height: 1.6em;
 }
 
 
