@@ -23,13 +23,13 @@ svg {
     height: 1.5em;
     fill: var(--font-color);
     transition: all 0.7s ease-in-out;
-    text-shadow: var(--text-shadow);
 }
 
 #scrollTopBtn:hover svg{
     width: 1.6em;
     height: 1.6em;
 }
+
 
 
 
