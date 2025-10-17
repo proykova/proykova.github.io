@@ -28,7 +28,10 @@ svg {
 #scrollTopBtn:hover svg{
     width: 1.6em;
     height: 1.6em;
+    fill: var(--font-color);
+    text-shadow: var(--text-shadow);
 }
+
 
 
 
