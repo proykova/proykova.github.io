@@ -15,6 +15,7 @@
 
 .site-footer {
     padding-top: 2em;
+    padding-bottom: 1em;
     margin-top: 3em;
 }
 
@@ -34,4 +35,5 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
+
 
