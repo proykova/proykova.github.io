@@ -42,17 +42,19 @@ document.getElementById("email-content").innerHTML = `<a href="mailto:${email}">
 
 // Lightbox images
 const images = document.querySelectorAll('.movie-img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
 
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    lightboxImg.src = img.dataset.full;
-    lightbox.style.display = 'flex';
-  });
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.dataset.full;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+        });
 });
 
-lightbox.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-  lightboxImg.src = '';
-});
