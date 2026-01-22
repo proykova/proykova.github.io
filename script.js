@@ -39,7 +39,7 @@ const email = user + "@" + domain;
 document.getElementById("email-footer").innerHTML = `<a href="mailto:${email}">${email}</a>`;
 const el = document.getElementById('email-content');
 if (el) {
-    el.innerHTML = '<a href="mailto:${email}">${email}</a>';
+    el.innerHTML = `<a href="mailto:${email}">${email}</a>`;
 }
 
 // Lightbox images
@@ -58,6 +58,7 @@ lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
     lightboxImg.src = '';
 });
+
 
 
 
