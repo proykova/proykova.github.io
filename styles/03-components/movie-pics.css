@@ -8,4 +8,6 @@
 
 .movie-details .fotos .pic {
     min-width: 150px;
+    cursor: pointer;
 }
+
