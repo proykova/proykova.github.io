@@ -37,8 +37,10 @@ const email = user + "@" + domain;
 
 // Показване в страницата
 document.getElementById("email-footer").innerHTML = `<a href="mailto:${email}">${email}</a>`;
-document.getElementById("email-content").innerHTML = `<a href="mailto:${email}">${email}</a>`;
-
+const el = document.getElementById('email-content');
+if (el) {
+    el.innerHTML = '<a href="mailto:${email}">${email}</a>';
+}
 
 // Lightbox images
 const images = document.querySelectorAll('.movie-img');
@@ -54,7 +56,8 @@ images.forEach(img => {
 
 lightbox.addEventListener('click', () => {
     lightbox.style.display = 'none';
-     lightboxImg.src = '';
+    lightboxImg.src = '';
 });
+
 
 
