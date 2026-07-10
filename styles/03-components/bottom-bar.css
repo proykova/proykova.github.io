@@ -4,7 +4,7 @@
     justify-content: space-between;
     font-family: var(--headings-font-hamily);
     border-top: 1px solid rgba(var(--font-color-rgb), 0.4);
-    padding-top: 1em;
+    padding-top: 0.2em;
     color: rgba(var(--font-color-rgb), 0.2);
     font-weight: normal;
     text-align: right;

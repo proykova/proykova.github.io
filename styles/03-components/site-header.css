@@ -1,10 +1,16 @@
 header {
     background-color: rgba(var(--color-main-background-rgb), 1);
     padding-bottom: 1em;
+    flex: 0 0 auto;
+}
+
+h1 {
+    margin-top: 0.2em;
+    margin-bottom: 0.1em;
 }
 
 .dima-roles {
     color: var(--color-second);
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
+    padding-bottom: 0.5em;
 }
-

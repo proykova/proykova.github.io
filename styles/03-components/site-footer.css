@@ -1,9 +1,13 @@
+footer {
+    flex: 0 0 auto;
+}
+
 #email-footer,
 #email-content {
     font-family: var(--body-font-family);
 }
 
-#email-content{
+#email-content {
     padding-left: 0.5em;
 }
 
@@ -14,8 +18,7 @@
 }
 
 .site-footer {
-    padding-top: 2em;
-    margin-top: 3em;
+    padding-top: 0.5em;
 }
 
 .footer-items {
@@ -23,7 +26,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-bottom:0.5em;
+    padding-bottom: 0.5em;
 }
 
 .footer-item p {
@@ -34,6 +37,3 @@
 .footer-item ul {
     padding-bottom: 0.5em;
 }
-
-
-
