@@ -44,19 +44,112 @@ if (el) {
 
 // Lightbox images
 const images = document.querySelectorAll('.movie-img');
+
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 
-images.forEach(img => {
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+let current = 0;
+
+
+// показва снимката
+
+function showImage(index) {
+
+    current = index;
+
+    lightboxImg.src = images[current].dataset.full;
+
+}
+
+
+// отваряне
+
+images.forEach((img, index) => {
+
     img.addEventListener('click', () => {
-        lightboxImg.src = img.dataset.full;
+
+        showImage(index);
+
         lightbox.style.display = 'flex';
+
     });
+
 });
 
+
+// затваряне
+
 lightbox.addEventListener('click', () => {
+
     lightbox.style.display = 'none';
+
     lightboxImg.src = '';
+
+});
+
+
+// да не затварят стрелките
+
+prev.addEventListener('click', (e) => {
+
+    e.stopPropagation();
+
+    current--;
+
+    if (current < 0) current = images.length - 1;
+
+    showImage(current);
+
+});
+
+next.addEventListener('click', (e) => {
+
+    e.stopPropagation();
+
+    current++;
+
+    if (current >= images.length) current = 0;
+
+    showImage(current);
+
+});
+
+
+// клавиатура
+
+document.addEventListener('keydown', (e) => {
+
+    if (lightbox.style.display !== 'flex') return;
+
+    if (e.key === 'ArrowLeft') {
+
+        current--;
+
+        if (current < 0) current = images.length - 1;
+
+        showImage(current);
+
+    }
+
+    if (e.key === 'ArrowRight') {
+
+        current++;
+
+        if (current >= images.length) current = 0;
+
+        showImage(current);
+
+    }
+
+    if (e.key === 'Escape') {
+
+        lightbox.style.display = 'none';
+
+    }
+
 });
 
 

@@ -14,3 +14,27 @@
     max-height: 95vh;
     object-fit: contain;
 }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+    transition: opacity .2s;
+}
+
+.arrow:hover {
+    opacity: .7;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
