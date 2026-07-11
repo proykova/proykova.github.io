@@ -4,12 +4,38 @@ html {
     padding-bottom: 0.5em;
 }
 
-.contact .site-header,
-.about .site-header {
-    margin-bottom: 2em;
+.contact .site-wrapper,
+.about .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-.contact .site-footer,
-.about .site-footer {
-    margin-top: 2em;
+.contact .site-wrapper .info-page,
+.about .site-wrapper .info-page,
+.contact .site-wrapper .site-header,
+.about .site-wrapper .site-header,
+.contact .site-wrapper .site-footer,
+.about .site-wrapper .site-footer {
+    width: 100%;
+}
+
+.contact .site-wrapper .info-page,
+.about .site-wrapper .info-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contact .site-wrapper .site-header,
+.about .site-wrapper .site-header {
+    flex: 0 0 auto;
+}
+
+.contact .site-wrapper .site-footer,
+.about .site-wrapper .site-footer {
+    flex: 0 0 auto;
 }
