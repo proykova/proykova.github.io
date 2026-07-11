@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 .laurel {
     flex: 0 0 7em;
 }
-
