@@ -3,3 +3,13 @@ html {
     color: var(--font-color);
     padding-bottom: 0.5em;
 }
+
+.contact .site-header,
+.about .site-header {
+    margin-bottom: 2em;
+}
+
+.contact .site-footer,
+.about .site-footer {
+    margin-top: 2em;
+}
