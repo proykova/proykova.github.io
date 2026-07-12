@@ -96,8 +96,7 @@
 .site-header nav {
     width: 100%;
     background: rgb(var(--color-main-background));
-    opacity: 95%;
-    padding: 1em 2em;
+    opacity: 95%; 
 }
 
 .site-header nav li {
