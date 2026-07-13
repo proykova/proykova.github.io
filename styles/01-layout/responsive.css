@@ -30,9 +30,31 @@
     }
 }
 
-/*@media only screen and (width > 1280px) {
+@media only screen and (width > 1440px) {
     :root {
         --font-base-size: 20px;
     }
 
-}*/
+}
+
+@media only screen and (width > 1920px) {
+    :root {
+        --font-base-size: 22px;
+    }
+
+}
+
+@media only screen and (width > 2560px) {
+    :root {
+        --font-base-size: 24px;
+    }
+
+}
+
+@media only screen and (width > 3840px) {
+    :root {
+        --font-base-size: 28px;
+    }
+
+}
+
