@@ -1,4 +1,4 @@
-@media only screen and (width <=374px) {
+@media only screen and (width <=480px) {
     :root {
         --font-base-size: 14px;
     }
@@ -8,9 +8,9 @@
     }
 }
 
-@media only screen and (width > 375px) {
+@media only screen and (width > 480px) {
     :root {
-        --font-base-size: 15px;
+        --font-base-size: 14px;
     }
 
     .custom-width {
@@ -18,43 +18,42 @@
     }
 }
 
-@media only screen and (width > 479px) {
+@media only screen and (width > 768px) {
     :root {
         --font-base-size: 16px;
     }
 }
 
-@media only screen and (width > 767px) {
+@media only screen and (width > 1024px) {
     :root {
-        --font-base-size: 17px;
+        --font-base-size: 18px;
     }
 }
 
-@media only screen and (width > 1439px) {
+@media only screen and (width > 1440px) {
     :root {
         --font-base-size: 18px;
     }
 
 }
 
-@media only screen and (width > 1919px) {
+@media only screen and (width > 1920px) {
     :root {
-        --font-base-size: 19px;
+        --font-base-size: 20px;
     }
 
 }
 
-@media only screen and (width > 2559px) {
+@media only screen and (width > 2560px) {
     :root {
-        --font-base-size: 21px;
+        --font-base-size: 24px;
     }
 
 }
 
-@media only screen and (width > 3199px) {
+@media only screen and (width > 3840px) {
     :root {
-        --font-base-size: 23px;
+        --font-base-size: 28px;
     }
 
 }
-
