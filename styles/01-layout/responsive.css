@@ -39,7 +39,7 @@
 
 @media only screen and (width > 1920px) {
     :root {
-        --font-base-size: 22px;
+        --font-base-size: 20px;
     }
 
 }
