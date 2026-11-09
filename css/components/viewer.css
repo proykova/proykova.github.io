@@ -1,0 +1,14 @@
+/* components/viewer — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+.image-viewer { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center; padding: 24px; background: color-mix(in oklab, var(--background) 95%, transparent); }
+.image-viewer > img { max-height: 85vh; max-width: 100%; object-fit: contain; cursor: pointer; }
+.image-viewer.film-viewer > img { max-height: 100%; }
+.image-viewer button { color: var(--foreground); }
+.image-viewer button:hover { color: var(--primary); }
+.viewer-close { position: absolute; right: 24px; top: 24px; z-index: 2; }
+.viewer-prev, .viewer-next { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; padding: 12px; border: 1px solid var(--border); border-radius: 50%; background: color-mix(in oklab,var(--background) 60%, transparent); }
+.viewer-prev { left: 16px; } .viewer-next { right: 16px; }
+[data-counter] { position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); font-size: 12px; text-transform: uppercase; color: var(--muted-foreground); letter-spacing: .2em; }
+@media(min-width:768px) { .viewer-prev {left:32px;} .viewer-next {right:32px;} }

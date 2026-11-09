@@ -1,0 +1,23 @@
+/* pages/privacy — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  :where(.space-y-6 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+}

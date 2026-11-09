@@ -1,0 +1,11 @@
+/* components/buttons — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+button { cursor: pointer; }
+
+@layer utilities {
+  .hover-bg-primary:hover {
+    background-color: var(--color-primary, var(--primary));
+  }
+}

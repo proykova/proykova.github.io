@@ -1,0 +1,140 @@
+/* pages/contact — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+}
+
+@layer utilities {
+
+  .inline-flex {
+    display: inline-flex;
+  }
+}
+
+@layer utilities {
+
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+}
+
+@layer utilities {
+
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+}
+
+@layer utilities {
+
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+}
+
+@layer utilities {
+
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+}
+
+@layer utilities {
+
+  .gap-1 {
+    gap: var(--spacing);
+  }
+}
+
+@layer utilities {
+
+  .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+}
+
+@layer utilities {
+
+  .from-background-70 {
+    --tw-gradient-from: var(--background);
+  }
+}
+
+@layer utilities {
+
+  .from-background-70 {
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+}
+
+@layer utilities {
+
+  .via-background-90 {
+    --tw-gradient-via: var(--background);
+  }
+}
+
+@layer utilities {
+
+  .via-background-90 {
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+}
+
+@layer utilities {
+
+  .to-background {
+    --tw-gradient-to: var(--background);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+}
+
+@layer utilities {
+
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+}
+
+@layer utilities {
+
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
+}
+
+@layer utilities {
+
+  .text-center {
+    text-align: center;
+  }
+}
+
+@layer utilities {
+
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+}
+
+@layer utilities {
+
+  .break-all {
+    word-break: break-all;
+  }
+}
+
+@layer utilities {
+
+  .opacity-40 {
+    opacity: .4;
+  }
+}

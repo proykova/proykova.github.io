@@ -1,0 +1,31 @@
+/* pages/films — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+
+  :where(.space-y-24 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+    .md-div-first-child-order-2 > div:first-child {
+      order: 2;
+    }
+  }
+}

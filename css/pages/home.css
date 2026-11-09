@@ -1,0 +1,110 @@
+/* pages/home — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+}
+
+@layer utilities {
+
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+}
+
+@layer utilities {
+
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+}
+
+@layer utilities {
+
+  .aspect--4-5 {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@layer utilities {
+
+  .h-screen {
+    height: 100vh;
+  }
+}
+
+@layer utilities {
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@layer utilities {
+
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+}
+
+@layer utilities {
+
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+}
+
+@layer utilities {
+
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+}
+
+@layer utilities {
+
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+}
+
+@layer utilities {
+
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+@layer utilities {
+
+  .tracking--0-12em {
+    --tw-tracking: .12em;
+    letter-spacing: .12em;
+  }
+}
+
+@layer utilities {
+
+  .drop-shadow--0_1px_3px_oklch-0_0_0-0-7 {
+    --tw-drop-shadow-size: drop-shadow(0 1px 3px var(--tw-drop-shadow-color, oklch(0% 0 0 / .7)));
+    --tw-drop-shadow: var(--tw-drop-shadow-size);
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+}

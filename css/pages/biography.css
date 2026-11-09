@@ -1,0 +1,105 @@
+/* pages/biography — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+}
+
+@layer utilities {
+
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
+  }
+}
+
+@layer utilities {
+
+  .list-disc {
+    list-style-type: disc;
+  }
+}
+
+@layer utilities {
+
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
+
+@layer utilities {
+
+  .gap-x-16 {
+    column-gap: calc(var(--spacing) * 16);
+  }
+}
+
+@layer utilities {
+
+  .gap-y-12 {
+    row-gap: calc(var(--spacing) * 12);
+  }
+}
+
+@layer utilities {
+
+  .self-start {
+    align-self: flex-start;
+  }
+}
+
+@layer utilities {
+
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+}
+
+@layer utilities {
+
+  .border-primary-40 {
+    border-color: var(--primary);
+  }
+}
+
+@layer utilities {
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-primary-40 {
+      border-color: color-mix(in oklab, var(--primary) 40%, transparent);
+    }
+  }
+}
+
+@layer utilities {
+
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-grid-cols-5 {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+}

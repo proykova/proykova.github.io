@@ -1,0 +1,192 @@
+/* pages/photography — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .mt-2-50d0d2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+}
+
+@layer utilities {
+
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@layer utilities {
+
+  .items-start {
+    align-items: flex-start;
+  }
+}
+
+@layer utilities {
+
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+}
+
+@layer utilities {
+
+  .gap-x-4 {
+    column-gap: calc(var(--spacing) * 4);
+  }
+}
+
+@layer utilities {
+
+  .gap-y-8 {
+    row-gap: calc(var(--spacing) * 8);
+  }
+}
+
+@layer utilities {
+
+  .rounded-none {
+    border-radius: 0;
+  }
+}
+
+@layer utilities {
+
+  .p-0 {
+    padding: 0;
+  }
+}
+
+@layer utilities {
+
+  .text-left {
+    text-align: left;
+  }
+}
+
+@layer utilities {
+
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+@layer utilities {
+
+  .whitespace-normal {
+    white-space: normal;
+  }
+}
+
+@layer utilities {
+
+  @media (hover: hover) {
+
+    .hover-bg-transparent:hover {
+      background-color: #0000;
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (hover: hover) {
+
+    .hover-text-accent-foreground:hover {
+      color: var(--accent-foreground);
+    }
+  }
+}
+
+@layer utilities {
+
+  .focus-visible-ring-1:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+}
+
+@layer utilities {
+
+  .focus-visible-ring-ring:focus-visible {
+    --tw-ring-color: var(--ring);
+  }
+}
+
+@layer utilities {
+
+  .focus-visible-outline-none:focus-visible {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+}
+
+@layer utilities {
+
+  .disabled-pointer-events-none:disabled {
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+
+  .disabled-cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@layer utilities {
+
+  .disabled-opacity-50:disabled {
+    opacity: .5;
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 40rem) {
+
+    .sm-grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 64rem) {
+    .lg-grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+@layer utilities {
+
+  ._svg-pointer-events-none svg {
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+
+  ._svg-size-4 svg {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+}
+
+@layer utilities {
+
+  ._svg-shrink-0 svg {
+    flex-shrink: 0;
+  }
+}
+
+/* Gallery in columns: different image formats stack without gaps */
+.photo-columns { column-count: 1; column-gap: 1rem; }
+.photo-columns > button { display: block; break-inside: avoid; margin-bottom: 2rem; }
+@media (min-width: 640px) { .photo-columns { column-count: 2; } }
+@media (min-width: 1024px) { .photo-columns { column-count: 3; } }

@@ -1,0 +1,150 @@
+/* pages/missing-page — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .isolate {
+    isolation: isolate;
+  }
+}
+
+@layer utilities {
+
+  .z-10 {
+    z-index: calc(10 * -1);
+  }
+}
+
+@layer utilities {
+
+  .z-20 {
+    z-index: calc(20 * -1);
+  }
+}
+
+@layer utilities {
+
+  .mt-9 {
+    margin-top: calc(var(--spacing) * 9);
+  }
+}
+
+@layer utilities {
+
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+}
+
+@layer utilities {
+
+  .min-h--100svh {
+    min-height: 100svh;
+  }
+}
+
+@layer utilities {
+
+  .scale-x-100 {
+    --tw-scale-x: calc(100% * -1);
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+}
+
+@layer utilities {
+
+  .bg-background-35 {
+    background-color: var(--background);
+  }
+}
+
+@layer utilities {
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background-35 {
+      background-color: color-mix(in oklab, var(--background) 35%, transparent);
+    }
+  }
+}
+
+@layer utilities {
+
+  .object-center {
+    object-position: center;
+  }
+}
+
+@layer utilities {
+
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
+  }
+}
+
+@layer utilities {
+
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+}
+
+@layer utilities {
+
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+}
+
+@layer utilities {
+
+  .text--10px {
+    font-size: 10px;
+  }
+}
+
+@layer utilities {
+
+  .leading--0-95 {
+    --tw-leading: .95;
+    line-height: .95;
+  }
+}
+
+@layer utilities {
+
+  .text-foreground-60 {
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-foreground-60 {
+      color: color-mix(in oklab, var(--foreground) 60%, transparent);
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-pb-6 {
+      padding-bottom: calc(var(--spacing) * 6);
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 64rem) {
+
+    .lg-text-8xl {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
+}

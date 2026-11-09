@@ -1,0 +1,6 @@
+/* accessibility — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .animate-reel, .footer-name-sweep-run { animation: none; } * { transition-duration: 0.01ms !important; } }

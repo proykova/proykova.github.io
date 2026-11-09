@@ -1,0 +1,75 @@
+/* components/header — standalone CSS, editable without a build step. */
+@layer properties, theme, base, components, utilities;
+
+
+@layer utilities {
+
+  .fixed {
+    position: fixed;
+  }
+}
+
+@layer utilities {
+
+  .top-0 {
+    top: 0;
+  }
+}
+
+@layer utilities {
+
+  .z-50 {
+    z-index: 50;
+  }
+}
+
+@layer utilities {
+
+  .bg-background-80 {
+    background-color: var(--background);
+  }
+}
+
+@layer utilities {
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-background-80 {
+      background-color: color-mix(in oklab, var(--background) 80%, transparent);
+    }
+  }
+}
+
+@layer utilities {
+
+  .backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-flex {
+      display: flex;
+    }
+  }
+}
+
+@layer utilities {
+
+  @media (width >= 48rem) {
+
+    .md-hidden {
+      display: none;
+    }
+  }
+}
+
+[hidden] { display: none !important; }
+
+.mobile-navigation { display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--border); padding: 24px; }
+.mobile-navigation a { font-family: var(--font-display); font-size: 24px; color: var(--foreground); }
+@media(min-width:768px) { .mobile-navigation { display:none; } }
