@@ -138,3 +138,11 @@
     opacity: .4;
   }
 }
+
+/* Contact background fade over the film still (plain CSS, no variables chain). */
+.contact-fade {
+  background-image: linear-gradient(to bottom,
+    color-mix(in oklab, var(--background) 70%, transparent) 0%,
+    color-mix(in oklab, var(--background) 90%, transparent) 50%,
+    var(--background) 100%);
+}
