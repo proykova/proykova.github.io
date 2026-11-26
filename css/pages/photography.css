@@ -190,3 +190,14 @@
 .photo-columns > button { display: block; break-inside: avoid; margin-bottom: 2rem; }
 @media (min-width: 640px) { .photo-columns { column-count: 2; } }
 @media (min-width: 1024px) { .photo-columns { column-count: 3; } }
+
+/* Photo with external link */
+.photo-columns > .photo-item { break-inside: avoid; margin-bottom: 2rem; }
+.photo-item > button { display: block; }
+.photo-link { display: inline-flex; align-items: center; gap: .25rem; margin-top: .25rem; font-size: .75rem; letter-spacing: .1em; color: var(--primary); text-decoration: none; }
+.photo-link:hover { text-decoration: underline; }
+.image-viewer .viewer-link { position: absolute; bottom: 3.5rem; right: 24px; left: auto; transform: none; display: inline-flex; align-items: center; gap: .5rem; padding: .5rem 1rem; border: 1px solid color-mix(in oklab, var(--primary) 50%, transparent); border-radius: 999px; background: color-mix(in oklab, var(--background) 80%, transparent); backdrop-filter: blur(4px); box-shadow: 0 8px 24px rgba(0,0,0,.4); font-size: .75rem; text-transform: uppercase; letter-spacing: .15em; color: var(--foreground); text-decoration: none; white-space: nowrap; z-index: 2; transition: background .2s, color .2s, border-color .2s; }
+.image-viewer .viewer-link:hover { background: var(--primary); border-color: var(--primary); color: var(--primary-foreground); }
+.image-viewer .viewer-link svg { width: 14px; height: 14px; }
+
+@media (min-width:768px) { .image-viewer .viewer-link { bottom: 24px; right: 32px; } }
