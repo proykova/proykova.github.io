@@ -11,6 +11,8 @@
     if (!source) return;
     const image = viewer.querySelector('img'); image.src = source.src; image.alt = source.alt;
     viewer.setAttribute('aria-label', poster ? source.alt : `${source.alt}, ${active + 1} of ${gallery.length}`);
+    const link = viewer.querySelector('.viewer-link'); const url = poster ? '' : gallery[active]?.dataset.link;
+    if (link) { link.hidden = !url; if (url) { link.href = url; link.firstChild.textContent = url.replace(/^https?:\/\//, '').replace(/\/$/, '') + ' '; } }
     const counter = viewer.querySelector('[data-counter]'); if (counter) counter.textContent = `${active + 1} / ${gallery.length}`;
   };
   const step = direction => { if (!poster && gallery.length) { active = (active + direction + gallery.length) % gallery.length; update(); } };
@@ -19,8 +21,9 @@
     viewer = document.createElement('div'); viewer.className = 'image-viewer';
     if (document.querySelector('[data-viewer="gallery"] img')?.closest('article')) viewer.classList.add('film-viewer');
     viewer.setAttribute('role','dialog'); viewer.setAttribute('aria-modal','true');
-    viewer.innerHTML = `<button type="button" class="viewer-close" aria-label="Close viewer">${icon('M18 6 6 18M6 6l12 12')}</button>${poster ? '' : `<button type="button" class="viewer-prev" aria-label="Previous photograph">${icon('m15 18-6-6 6-6')}</button><button type="button" class="viewer-next" aria-label="Next photograph">${icon('m9 18 6-6-6-6')}</button>`}<img alt="">${poster ? '' : '<p data-counter></p>'}`;
+    viewer.innerHTML = `<button type="button" class="viewer-close" aria-label="Close viewer">${icon('M18 6 6 18M6 6l12 12')}</button>${poster ? '' : `<button type="button" class="viewer-prev" aria-label="Previous photograph">${icon('m15 18-6-6 6-6')}</button><button type="button" class="viewer-next" aria-label="Next photograph">${icon('m9 18 6-6-6-6')}</button>`}<img alt="">${poster ? '' : `<a class="viewer-link" target="_blank" rel="noopener noreferrer" hidden> ${icon('M7 7h10v10M7 17 17 7')}</a><p data-counter></p>`}`;
     viewer.addEventListener('click', event => {
+      if (event.target.closest('.viewer-link')) return;
       if (event.target.closest('.viewer-prev')) step(-1);
       else if (event.target.closest('.viewer-next')) step(1);
       else if (event.target.tagName === 'IMG') { if (!poster) step(1); }
@@ -35,7 +38,7 @@
     if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
     if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
     if (event.key === 'Tab') {
-      const buttons = [...viewer.querySelectorAll('button')]; const first = buttons[0], last = buttons.at(-1);
+      const buttons = [...viewer.querySelectorAll('button, a:not([hidden])')]; const first = buttons[0], last = buttons.at(-1);
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
     }
