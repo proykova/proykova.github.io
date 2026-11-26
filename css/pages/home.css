@@ -115,3 +115,38 @@
 .home-intro-lead{margin:1.75rem 0 0;font-size:1.25rem;line-height:1.6;color:var(--foreground)}
 .home-intro-text{margin:1.25rem 0 0;font-size:1rem;line-height:1.8;color:var(--muted-foreground)}
 @media (min-width:768px){.home-intro-title{font-size:3.75rem}.home-intro-lead{font-size:1.5rem}}
+
+/* Hero: lighter fade so the video reads, solid gold primary button, outline secondary */
+.hero-fade{
+  background-image: linear-gradient(to top, color-mix(in oklab, var(--background) 75%, transparent) 0%, color-mix(in oklab, var(--background) 35%, transparent) 38%, transparent 100%);
+}
+.hero-title{font-size:3rem;line-height:1}
+.hero-btn{
+  display:inline-block;
+  padding:.75rem 1.5rem;
+  font-size:.75rem;
+  line-height:1rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-decoration:none;
+  border:1px solid transparent;
+  box-shadow:0 10px 30px rgb(0 0 0 / .45);
+  transition:background-color .2s ease,border-color .2s ease,color .2s ease;
+}
+.hero-btn--solid{
+  background-color:var(--primary);
+  border-color:var(--primary);
+  color:var(--primary-foreground);
+}
+.hero-btn--solid:hover{background-color:color-mix(in oklab, var(--primary) 85%, transparent)}
+.hero-btn--outline{
+  background-color:color-mix(in oklab, var(--background) 40%, transparent);
+  border-color:transparent;
+  color:var(--foreground);
+  backdrop-filter:blur(4px);
+}
+.hero-btn--outline:hover{
+  border-color:var(--foreground);
+  background-color:color-mix(in oklab, var(--foreground) 10%, transparent);
+}
+@media (min-width:768px){.hero-title{font-size:4.5rem}}
